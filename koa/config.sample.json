@@ -1,0 +1,37 @@
+{
+    "development": {
+        "server": {
+            "protocol": "http",
+            "host": "localhost:3000"
+        },
+        "google": {
+            "key": "MYSPECIALKEY",
+            "secret": "SUPERSECRET",
+            "scope": [
+                "profile",
+                "email"
+            ],
+            "callback": "/handle_google_callback"
+        }
+    },
+    "staging": {
+        "server": {
+            "protocol": "https",
+            "host": "staging.mywebsite.com"
+        },
+        "facebook": {
+            "key": "staging OAuth app credentials",
+            "secret": "staging OAuth app credentials"
+        }
+    },
+    "production": {
+        "server": {
+            "protocol": "https",
+            "host": "mywebsite.com"
+        },
+        "facebook": {
+            "key": "production OAuth app credentials",
+            "secret": "production OAuth app credentials"
+        }
+    }
+}
